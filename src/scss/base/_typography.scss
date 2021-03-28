@@ -1,0 +1,70 @@
+.heading {
+  font-weight: 500;
+  font-size: $md-lg;
+  font-family: 'Poppins';
+  color: $white;
+  line-height: 1.2;
+  margin: 1rem 0;
+
+  &--name {
+    font-size: $xlg;
+    font-weight: 700;
+  }
+
+  &--sub {
+    letter-spacing: 0.15em;
+    font-size: $sm-md;
+    font-weight: 400;
+    font-family: 'Poppins';
+    color: $white;
+    opacity: 0.5;
+  }
+}
+
+.paragraph {
+  font-size: $sm;
+  font-weight: 300;
+  font-family: 'Poppins';
+  color: $white;
+  opacity: 0.7;
+}
+
+.landing-section {
+  &__content {
+    ul {
+      li > a {
+        text-decoration: none;
+        color: $white;
+        font-weight: 600;
+        font-size: $md;
+        font-family: 'Poppins';
+        opacity: 0.15;
+        position: relative;
+        transition: all 400ms ease-out;
+
+        &::after {
+          content: '';
+          width: 1px;
+          height: 7px;
+          background-color: $orange;
+          border-radius: 100%;
+          position: absolute;
+          top: 15px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          transition: all 600ms cubic-bezier(0.35, -0.04, 0.23, 1.38);
+          opacity: 0;
+        }
+        &:hover {
+          opacity: 1;
+
+          &::after {
+            opacity: 1;
+            width: 7px;
+            top: -8px;
+          }
+        }
+      }
+    }
+  }
+}

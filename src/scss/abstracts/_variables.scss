@@ -1,0 +1,28 @@
+// Colors
+$white: #f3f3f3;
+$orange: #efa649;
+$dark-blue: #1f212c;
+$blue: #3d404f;
+$light-blue: #464a5a;
+
+$gradient-home: radial-gradient(100% 100% at 50% 0%, #464a5a 0%, #252734 100%);
+$gradient-footer: radial-gradient(
+  100% 100% at 50% 100%,
+  #3d4050 0%,
+  #252734 100%
+);
+
+// Fonts
+$sm: 1.4rem;
+$sm-md: 1.8rem;
+$md: 2.4rem;
+$md-lg: 3.6rem;
+$lg: 6.4rem;
+$xlg: 7.2rem;
+
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
